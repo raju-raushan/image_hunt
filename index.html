@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search Engine</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css">`
+</head>
+<body>
+    <nav role="navigation">
+        <div id="menuToggle">
+          
+          <input type="checkbox" />
+          
+          
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <ul id="menu">
+            <a href="http://127.0.0.1:5500/website%20design/manu.html#" target="_main"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Info</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+          </ul>
+        </div>
+
+      </nav>
+    <div id="title"><h1>Image Search Engine</h1></div>
+    <form id="search-form">
+        <input type="text" id="search-box" placeholder="Search anything here">
+        <button>Search</button>
+    </form>
+    <div id="search-result"></div>
+    <button id="show-more-btn">Show more</button>
+    <script src="script.js"></script>
+   <!-- <div class="google">
+    <div class="gcse-search">
+      <script async src="https://cse.google.com/cse.js?cx=51252104388024bb0">
+      </script>
+      </div> -->
+   </div>
+ 
+    
+    <hr>
+    <>
+        
+            <h3>About</h3>
+                <p id="about">Welcome to our amazing webpage! 🎉
+                  <br>
+                  <br>
+                Here, your thinking is the only limit. Looking for a specific image? 
+                <br>
+                You've come to the right place! Our powerful search feature allows you to find any image you desire. Whether it's a breathtaking landscape, a cute puppy, or a stunning piece of art, we've got you covered.
+                <br> 
+                Just type in what you're looking for in the search bar, and let us do the rest. We're dedicated to making your image search as easy and enjoyable as possible. So go ahead, start exploring, and let the images inspire you!
+                <br>  
+                <h3>Happy searching! 🌟</h3> </p>
+        <br>
+        <br>
+            
+        <h3 class="contact">Contacts :</h3>
+        <!-- <div class="icon">
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/raushan-raj-5749b228a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BnkNoD0dcQnimSJO3DVeSXw%3D%3D" target="_main"> <img src="data:image/png;base64,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" alt="Linkedin" height="50">
+            <i class="fa fa-linkedin-square" aria-hidden="true">
+            </i>  
+          </a>
+          </div> 
+   
+        <div class="mail">
+            <a href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSKjRSzdNbjXnrHFFkMVxpHRgjBXJnvbdthBcnBVJtkWPBBKBdcgcTSPTbWXZSXZwVbGwsNx" target="_main"> <img src="data:image/png;base64,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" alt="Mail" height="50">
+            <i class="fa fa-envelope" aria-hidden="true">
+            </i>  
+          </a> 
+          </div>
+        </div> 
+      -->
+      <div class="icon">
+        <div class="linkedin">
+          <a
+            href="https://www.linkedin.com/in/raushan-raj-5749b228a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BnkNoD0dcQnimSJO3DVeSXw%3D%3D"
+            target="_main"
+          >
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="gmail">
+          <a
+            href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSKjRSzdNbjXnrHFFkMVxpHRgjBXJnvbdthBcnBVJtkWPBBKBdcgcTSPTbWXZSXZwVbGwsNx"
+            target="_main"
+          >
+            <i class="fa fa-envelope" aria-hidden="true"></i
+          ></a>
+        </div>
+        
+      </div>
+                   
+    
+    <hr>
+    </footer>
+    
+</body>
+</html>
