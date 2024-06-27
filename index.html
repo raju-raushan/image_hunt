@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search Engine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style.css">`
+</head>
+
+<body>
+
+    <div id="title"><h1>Image Search Engine</h1></div>
+    <!-- Search Bar -->
+    <form id="search-form">
+        <input type="text" id="search-box" placeholder="Search anything here">
+        <button>Search</button>
+    </form>
+    <!-- Search Result -->
+    <div id="search-result"></div>
+    <div id="no-result" style="display: none;">Invalid Search!...No results found</div>
+    <button id="show-more-btn">Show more</button>
+
+    <!-- About Section -->
+    <div class="about-section">
+        <img src="Design.png" alt="About Image" class="about-image">
+        <div class="about-text">
+            <h1>About Us</h1>
+            <p>
+                Welcome to our amazing webpage! 🎉<br>
+                Here, your thinking is the only limit. Looking for a specific image? 
+                You've come to the right place! Our powerful search feature allows you to find any image you desire. Whether it's a breathtaking landscape, a cute puppy, or a stunning piece of art, we've got you covered.
+                Just type in what you're looking for in the search bar, and let us do the rest. We're dedicated to making your image search as easy and enjoyable as possible. So go ahead, start exploring, and let the images inspire you!
+                <br>
+                Happy searching! 🌟
+            </p>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="ourfeatures"><h1>Our Features</h1>
+        <div class="features">
+            <div class="f1">
+                <h4>Search Bar</h4>
+                <p>
+                In the search bar, you can search the image of any real-life thing.
+                </p>
+            </div>
+            <div class="f2">
+                <h4>Show More Button</h4>
+                <p>
+                On searching, you will see 15 images related to that particular word. And after that a show more button will appear which can show more 15 image by tapping on it.
+                </p>
+            </div>
+            <div class="f3">
+                <h4>Contact</h4>
+                <p>
+                At the bottom of the page you will see three icons i.e., Linkedin, Gmail and Twitter.By clicking on it you will be redirected to me through another tab.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- carousel -->
+  <div class="carousel">
+    <!-- list item -->
+
+    <div class="list">
+        <div class="item">
+            <img src="dark.jpg">
+            <div class="content">
+                <div class="author">Hey!...Good to see you...✌️</div>
+                <div class="title">Want images of</div>
+                <div class="topic">Nature</div>
+                <div class="des">
+                    Checkout the wonderful nature...
+                </div>
+                <div class="buttona">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="973293.jpg">
+            <div class="content">
+                <div class="author">Hey!...Good to see you...✌️</div>
+                <div class="title">Want images of</div>
+                <div class="topic">Cars</div>
+                <div class="des">
+                    Checkout the images of cars across all over the world!
+                </div>
+                <div class="buttonb">
+                    <button></button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="isorepublic-fruit-grapes-1.jpg">
+            <div class="content">
+                <div class="author">Hey!...Good to see you...✌️</div>
+                <div class="title">Want images of</div>
+                <div class="topic">Fruits</div>
+                <div class="des">
+                Checkout the taste of nature...
+                </div>
+                <div class="buttonc">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="foo.jpg">
+            <div class="content">
+                <div class="author">Hey!...Good to see you...✌️</div>
+                <div class="title">Want images of</div>
+                <div class="topic">Flowers</div>
+                <div class="des">
+                Checkout the colours of nature...
+                </div>
+                <div class="buttond">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- list thumnail -->
+    <div class="thumbnail">
+        <div class="item">
+            <img src="dark.jpg">
+            <div class="content">
+                <div class="title">
+                    Nature
+                </div>
+                <div class="description">
+                    Wow...
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="973293.jpg">
+            <div class="content">
+                <div class="title">
+                    Cars
+                </div>
+                <div class="description">
+                    Let's go...
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="isorepublic-fruit-grapes-1.jpg">
+            <div class="content">
+                <div class="title">
+                    Fruits
+                </div>
+                <div class="description">
+                    Tasty...
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="foo.jpg">
+            <div class="content">
+                <div class="title">
+                    Flowers
+                </div>
+                <div class="description">
+                    Beautiful...
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Carousel change and search button -->
+    <div class="arrows">
+        <button id="prev"></button>
+
+        <div class="goto"><a href="#search-box" target="_self"> <img src="icons8-google-web-search-64.png" height="75px" width="75px" alt="Search"> </a></div>
+        
+        <button id="next"></button>
+        </div>
+
+    <!-- time running -->
+    <div class="time"></div>
+
+</div>
+
+    <script src="script.js"></script>
+    <script src="suggest.js"></script>
+    <script src="button.js"></script>
+
+</div>
+
+    <hr>
+    <div>
+        <br>
+        <br>
+        <!-- Contact section -->
+        <h3 class="contact">Contacts</h3>
+        
+        <div class="icon">
+        <div class="linkedin">
+        <a href="https://www.linkedin.com/in/raushan-raj-5749b228a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BnkNoD0dcQnimSJO3DVeSXw%3D%3D" target="_main">
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="gmail">
+        <a href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSKjRSzdNbjXnrHFFkMVxpHRgjBXJnvbdthBcnBVJtkWPBBKBdcgcTSPTbWXZSXZwVbGwsNx" target="_main">
+        <i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="twitter">
+        <a href="https://x.com/RaushanRaj30979" target="_main">
+        <i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    
+    
+    <hr>
+    </footer>
+    
+</body>
+</html>
+
