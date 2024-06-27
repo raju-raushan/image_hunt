@@ -87,6 +87,32 @@ form button{
     cursor: pointer;
 }
 
+/* Responsive Form Button */
+form input {
+  padding: 10px 20px; /* Adjust padding for button size */
+  font-size: 16px; /* Adjust font size */
+}
+
+@media only screen and (max-width: 600px) {
+  form input {
+      padding: 8px 16px; /* Modify padding for smaller screens */
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Responsive Form Button */
+form button {
+    padding: 10px 20px; /* Adjust padding for button size */
+    font-size: 16px; /* Adjust font size */
+}
+
+@media only screen and (max-width: 600px) {
+    form button {
+        padding: 8px 16px; /* Modify padding for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
 ::placeholder{
     color: #726e6e;
     font-size: 20px;
